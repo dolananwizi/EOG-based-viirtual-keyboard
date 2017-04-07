@@ -32,7 +32,7 @@ for i = 1 : nn
 end
 
 % version 1
-windowlength = (min(windowlength_)/fs) - 0.1;
+windowlength = (max(windowlength_)/fs) - 0.1;
 windowlength = (round(windowlength*100))/100;
 
 end
