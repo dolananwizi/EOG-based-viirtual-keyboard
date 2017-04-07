@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % thresholding the data bar fex
-% 
+% use this after using creatfexfunction
 % By Arrijal Hanif - 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
