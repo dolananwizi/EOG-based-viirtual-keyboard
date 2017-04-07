@@ -8,14 +8,14 @@ fs = 200;
 fig = 1;
 
 %% Calibration Stage %%
-numsub = 11;
+numsub = 8;
 numpola = 2;
 numdata = 2;
 data = loadganglion(numsub-6,numpola,numdata);
 
 [dtv,dth,tt,duration] = preprocessing(data,numpola,fs);
 
-overlap = 25;
+overlap = 0;
 thvalue = detthreshold(dth,fs);
 windowlength = detwindow(dth,fs,thvalue);
 % windowlength = 0.5;
@@ -47,5 +47,5 @@ title(sprintf('Horizontal Data s%d-p-%d-%d --- W=%dms O=%d',numsub,numpola,numda
 plotall(dth,tt,thvalue,ratah,bartime);
 grid on;
 hold on;
-[resultbarv,linedetectionv] = checkfex2(ratahbin,3,thvalue,windowlength,overlap,duration);
+[resultbarh,linedetectionh] = checkfex2(ratahbin,3,thvalue,windowlength,overlap,duration);
 hold off;
