@@ -21,7 +21,7 @@ windowlength = detwindow(dth,fs,thvalue);
 % windowlength = 0.5;
 
 %% main program stage %%
-numpola = 2;
+numpola = 3;
 numdata = 1;
 data = loadganglion(numsub-6,numpola,numdata);
 
